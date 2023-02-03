@@ -18,7 +18,7 @@ import logoRajang from '@/images/logos/rajang.png'
 import logoPressMetal from '@/images/logos/press-metal.jpeg'
 import logoMahiran from '@/images/logos/mahiran.jpeg'
 import logoIlead from '@/images/logos/ilead.webp'
-import { generateRssFeed } from '@/lib/generateRssFeed'
+// import { generateRssFeed } from '@/lib/generateRssFeed'
 import { getAllArticles } from '@/lib/getAllArticles'
 import { formatDate } from '@/lib/formatDate'
 
@@ -354,9 +354,9 @@ export default function Home({ articles }) {
 }
 
 export async function getStaticProps() {
-  if (process.env.NODE_ENV === 'production') {
-    await generateRssFeed()
-  }
+  // if (process.env.NODE_ENV === 'production') {
+  //   await generateRssFeed()
+  // }
 
   return {
     props: {
