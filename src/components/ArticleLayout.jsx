@@ -55,7 +55,6 @@ export function ArticleLayout({
                   {meta.title}
                 </h1>
                 <div
-                  level={meta.level}
                   className="order-first flex items-center text-base text-zinc-400 dark:text-zinc-500"
                 >
                   <span className="h-4 w-0.5 rounded-full bg-zinc-200 dark:bg-zinc-500" />
