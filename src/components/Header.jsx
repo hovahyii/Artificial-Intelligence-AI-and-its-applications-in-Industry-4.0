@@ -228,7 +228,7 @@ function AvatarContainer({ className, ...props }) {
 function Avatar({ large = false, className, ...props }) {
   return (
     <Link
-      href="/"
+      hreflevel
       aria-label="Home"
       className={clsx(className, 'pointer-events-auto')}
       {...props}
@@ -248,7 +248,7 @@ function Avatar({ large = false, className, ...props }) {
 }
 
 export function Header() {
-  let isHomePage = useRouter().pathname === '/'
+  let isHomePage = useRouter().pathname === "/"
 
   let headerRef = useRef()
   let avatarRef = useRef()
