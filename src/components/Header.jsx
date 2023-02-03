@@ -228,7 +228,7 @@ function AvatarContainer({ className, ...props }) {
 function Avatar({ large = false, className, ...props }) {
   return (
     <Link
-      href="/"
+      href="./"
       aria-label="Home"
       className={clsx(className, 'pointer-events-auto')}
       {...props}
