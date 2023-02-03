@@ -19,7 +19,7 @@ import logoPressMetal from '@/images/logos/press-metal.jpeg'
 import logoMahiran from '@/images/logos/mahiran.jpeg'
 import logoIlead from '@/images/logos/ilead.webp'
 // import { generateRssFeed } from '@/lib/generateRssFeed'
-import { getAllArticles } from '@/lib/getAllArticles'
+import { getAllCourses } from '@/lib/getAllCourses'
 import { formatDate } from '@/lib/formatDate'
 
 function MailIcon(props) {
@@ -89,16 +89,16 @@ function BriefcaseIcon(props) {
 
 
 
-function Article({ article }) {
+function Course({ course }) {
   return (
-    <Card as="article">
-      <Card.Title href={`/articles/${article.slug}`}>
-        {article.title}
+    <Card as="course">
+      <Card.Title href={`/courses/${course.slug}`}>
+        {course.title}
       </Card.Title>
       <Card.Eyebrow  decorate>
-        {article.level}
+        {course.level}
       </Card.Eyebrow>
-      <Card.Description>{article.description}</Card.Description>
+      <Card.Description>{course.description}</Card.Description>
       <Card.Cta>View Details</Card.Cta>
     </Card>
   )
@@ -289,7 +289,7 @@ function Photos() {
   )
 }
 
-export default function Home({ articles }) {
+export default function Home({ courses }) {
   return (
     <>
       <Head>
@@ -338,8 +338,8 @@ export default function Home({ articles }) {
       <Container className="mt-24 md:mt-28">
         <div className="mx-auto grid max-w-xl grid-cols-1 gap-y-20 lg:max-w-none lg:grid-cols-2">
           <div className="flex flex-col gap-16">
-            {articles.map((article) => (
-              <Article key={article.slug} article={article} />
+            {courses.map((course) => (
+              <Course key={course.slug} course={course} />
             ))}
           </div>
           <div className="space-y-10 lg:pl-16 xl:pl-24">
@@ -360,7 +360,7 @@ export async function getStaticProps() {
 
   return {
     props: {
-      articles: (await getAllArticles())
+      courses: (await getAllCourses())
         .slice(0, 4)
         .reverse()
         .map(({ component, ...meta }) => meta),
