@@ -68,9 +68,9 @@ and its applications in Industry
             <div className="mt-6 space-y-7 text-base text-zinc-600 dark:text-zinc-400">
               <p>
               The Learn and Work Assignment (LWA) for the 
-training program "Work with AI: Apply and 
+training program &quot;Work with AI: Apply and 
 understand Artificial Intelligence (AI) in 
-Industry 4.0 (IR4.0)" is designed to equip 
+Industry 4.0 (IR4.0)&quot; is designed to equip 
 learners with the knowledge and skills they need 
 to work effectively with AI in the context of 
 Industry 4.0.

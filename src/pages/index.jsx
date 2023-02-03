@@ -307,8 +307,8 @@ export default function Home({ articles }) {
             Software Developer, mentor, and life-long learner.
           </h1>
           <p className="mt-6 text-base text-zinc-600 dark:text-zinc-400">
-            I’m Hovah, a software developer based in Malaysia. I built professional websites for companies.
-            I'm also a student mentor where I supervise and guide students on their programming journey.
+            I&apos;m Hovah, a software developer based in Malaysia. I built professional websites for companies.
+            I&apos;m also a student mentor where I supervise and guide students on their programming journey.
           </p>
           <div className="mt-6 flex gap-6">
             {/* <SocialLink
